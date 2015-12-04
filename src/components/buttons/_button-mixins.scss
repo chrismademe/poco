@@ -1,0 +1,55 @@
+@mixin button() {
+    background: none;
+    border: 0;
+    border-radius: $border-radius;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $type-body-font;
+    font-weight: 400;
+    line-height: 1;
+    overflow: visible;
+    letter-spacing: inherit;
+    -webkit-font-smoothing: inherit;
+
+    &:focus {
+        box-shadow: 0;
+        outline: 0;
+    }
+}
+
+@mixin button-color($background: transparent, $text: $black) {
+    background-color: $background;
+    color: $text;
+
+    &:hover {
+        background-color: lighten($background, 8%);
+    }
+}
+
+@mixin button-size($size) {
+
+    @if $size == 'extra small' {
+        @include rem(font-size, 1.4rem);
+        @include rem(padding, .3rem .5rem);
+    }
+
+    @if $size == 'small' {
+        @include rem(font-size, 1.5rem);
+        @include rem(padding, .4rem .6rem);
+    }
+
+    @if $size == 'medium' {
+        @include rem(padding, .95rem 1.5rem);
+    }
+
+    @if $size == 'large' {
+        @include rem(font-size, 1.7rem);
+        @include rem(padding, 1.15rem 1.8rem);
+    }
+
+    @if $size == 'extra large' {
+        @include rem(font-size, 1.85rem);
+        @include rem(padding, 1.4rem 2rem);
+    }
+
+}

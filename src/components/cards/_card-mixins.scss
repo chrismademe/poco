@@ -1,0 +1,19 @@
+@mixin card() {
+    background-color: $white;
+    border: 1px solid $light-grey;
+    border-radius: $border-radius;
+    box-sizing: border-box;
+
+    .card-title {
+        @include rem(padding, 1.3rem 2.4rem);
+    }
+
+    .card-content {
+        color: $dark-grey;
+        @include rem(padding, 0 2.4rem 2.4rem);
+    }
+
+    .card-image + .card-content {
+        @include rem(padding-top, 2.4rem);
+    }
+}

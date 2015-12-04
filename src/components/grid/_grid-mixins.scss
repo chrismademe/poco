@@ -1,0 +1,41 @@
+@mixin grid-wrapper($align-items: flex-start) {
+    overflow-x: hidden;
+
+    @if $grid-type == float {
+        @include clearfix;
+    } @else {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: $align-items;
+    }
+}
+
+@mixin column() {
+    box-sizing: border-box;
+    margin-right: $grid-gutter;
+    position: relative;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @if $grid-type == float {
+        float: left;
+    }
+}
+
+@mixin span-columns($span, $setup: false) {
+
+    @if $setup {
+        @include column();
+    }
+
+    $num-gutters: $grid-columns - 1; // Gutters will always be 1 less then columns
+    $grid-gutter-space: $num-gutters * $grid-gutter; // Finding total space taken up by gutters
+    $remaining-space: 100 - $grid-gutter-space; // Subtracting the total gutter space from 100(%)
+    $column-width: $remaining-space / $grid-columns; // Finding column width by dividing space left by number of columns
+    $width: ($span) * $column-width + ($grid-gutter * ($span - 1) );
+    width: $width;
+}

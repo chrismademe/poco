@@ -1,0 +1,9 @@
+.wrapper {
+    box-sizing: border-box;
+    width: 100%;
+
+    @include bp('large') {
+        margin: 0 auto;
+        @include rem(width, 96rem);
+    }
+}

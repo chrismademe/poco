@@ -1,0 +1,91 @@
+/**
+ * All Round margin
+ */
+.u-margin-1 {
+    @include rem(margin, 1rem);
+}
+
+.u-margin-2 {
+    @include rem(margin, 2rem);
+}
+
+.u-margin-3 {
+    @include rem(margin, 3rem);
+}
+
+.u-margin-4 {
+    @include rem(margin, 4rem);
+}
+
+.u-margin-5 {
+    @include rem(margin, 5rem);
+}
+
+/**
+* Top margin
+*/
+.u-margin-top-1 {
+    @include rem(margin-top, 1rem);
+}
+
+.u-margin-top-2 {
+    @include rem(margin-top, 2rem);
+}
+
+.u-margin-top-3 {
+    @include rem(margin-top, 3rem);
+}
+
+.u-margin-top-4 {
+    @include rem(margin-top, 4rem);
+}
+
+.u-margin-top-5 {
+    @include rem(margin-top, 5rem);
+}
+
+/**
+* Right margin
+*/
+.u-margin-bottom-1 {
+    @include rem(margin-bottom, 1rem);
+}
+
+.u-margin-bottom-2 {
+    @include rem(margin-bottom, 2rem);
+}
+
+.u-margin-bottom-3 {
+    @include rem(margin-bottom, 3rem);
+}
+
+.u-margin-bottom-4 {
+    @include rem(margin-bottom, 4rem);
+}
+
+.u-margin-bottom-5 {
+    @include rem(margin-bottom, 5rem);
+}
+
+/**
+* Left margin
+*/
+.u-margin-left-1 {
+    @include rem(margin-left, 1rem);
+}
+
+.u-margin-left-2 {
+    @include rem(margin-left, 2rem);
+}
+
+.u-margin-left-3 {
+    @include rem(margin-left, 3rem);
+}
+
+.u-margin-left-4 {
+    @include rem(margin-left, 4rem);
+}
+
+.u-margin-left-5 {
+    @include rem(margin-left, 5rem);
+}

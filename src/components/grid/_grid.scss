@@ -1,0 +1,26 @@
+@import "grid-mixins";
+
+.example {
+    @include grid-wrapper(stretch);
+
+    .card {
+        @include column();
+        @include span-columns(6);
+
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+
+        @include bp('large') {
+            @include span-columns(4);
+
+            &:nth-child(2n) {
+                margin-right: $grid-gutter;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

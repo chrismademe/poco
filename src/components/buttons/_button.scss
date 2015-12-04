@@ -1,0 +1,49 @@
+@import "button-mixins";
+
+.button,
+button {
+    @include button;
+    @include button-size('medium');
+
+    // Colours / States
+    &.-primary {
+        @include button-color($primary, $white);
+    }
+
+    &.-accent {
+        @include button-color($accent, $white);
+    }
+
+    &.-positive {
+        @include button-color($positive, $white);
+    }
+
+    &.-negative {
+        @include button-color($negative, $white);
+    }
+
+    &.-warning {
+        @include button-color($warning, $white);
+    }
+
+    // Sizes
+    &.-extra-small {
+        @include button-size('extra small');
+    }
+
+    &.-small {
+        @include button-size('small');
+    }
+
+    &.-medium {
+        @include button-size('medium');
+    }
+
+    &.-large {
+        @include button-size('large');
+    }
+
+    &.-extra-large {
+        @include button-size('extra large');
+    }
+}
