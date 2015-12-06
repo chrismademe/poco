@@ -1,0 +1,33 @@
+/* Style */
+.u-bos-solid { border-style: solid !important; }
+.u-bos-dotted { border-style: dotted !important; }
+.u-bos-dashed { border-style: dashed !important; }
+.u-bos-double { border-style: double !important; }
+
+/* Weights / Widths */
+.u-bow-0 { border: none; }
+.u-bow-1 { @include rem(border-width, .1rem) }
+.u-bow-2 { @include rem(border-width, .2rem) }
+.u-bow-3 { @include rem(border-width, .3rem) }
+.u-bow-4 { @include rem(border-width, .4rem) }
+.u-bow-5 { @include rem(border-width, .5rem) }
+
+/* Colours */
+.u-boc-primary { border-color: $primary !important; }
+.u-boc-accent { border-color: $accent !important; }
+.u-boc-neutral { border-color: $neutral !important; }
+.u-boc-positive { border-color: $positive !important; }
+.u-boc-negative { border-color: $negative !important; }
+.u-boc-warning { border-color: $warning !important; }
+.u-boc-black { border-color: $black !important; }
+.u-boc-white { border-color: $white !important; }
+.u-boc-grey { border-color: $grey !important; }
+.u-boc-dark-grey { border-color: $dark-grey !important; }
+.u-boc-light-grey { border-color: $light-grey !important; }
+.u-boc-facebook { border-color: $facebook !important; }
+.u-boc-twitter { border-color: $twitter !important; }
+.u-boc-google-plus { border-color: $google-plus !important; }
+.u-boc-youtube { border-color: $youtube !important; }
+.u-boc-instagram { border-color: $instagram !important; }
+.u-boc-linkedin { border-color: $linkedin !important; }
+.u-boc-pinterest { border-color: $pinterest !important; }

@@ -11,6 +11,7 @@
 // Colours
 $primary:                   #be2b8c;
 $accent:                    #2ec996;
+$neutral:                   #309ee4;
 $positive:                  #1c864a;
 $negative:                  #9e342d;
 $warning:                   #cd9321;
@@ -19,13 +20,20 @@ $white:                     #fff;
 $grey:                      #999a98;
 $dark-grey:                 #4f4f4f;
 $light-grey:                #e4e4e4;
+$facebook:                  #385797;
+$twitter:                   #03abea;
+$google-plus:               #d34836;
+$youtube:                   #cc181e;
+$instagram:                 #9e7864;
+$linkedin:                  #0078a8;
+$pinterest:                 #c91515;
 
 // Typography
 $type-body-font:            -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
 $type-body-size:            1.6em;
 $type-root-size:            1.6rem;
 $type-body-weight:          300;
-$type-heading-font:         $type-body-font;
+$type-heading-font:         "Bitter", $type-body-font;
 $type-heading-weight:       400;
 
 // Breakpoints
@@ -37,7 +45,8 @@ $bp-xlarge:                 1240px;
 // Grid
 $grid-type:                 flex; /* flex or float */
 $grid-columns:              12;
-$grid-gutter:               3%;
+$grid-gutter:               2.4rem;
+$grid-gutter-half:          $grid-gutter / 2;
 
 // Border Radius
 $border-radius-small:       2px;

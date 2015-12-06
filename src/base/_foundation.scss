@@ -8,11 +8,12 @@ html {
 }
 
 body {
-    color: $black;
+    color: $dark-grey;
     font-family: $type-body-font;
     font-size: $type-body-size;
     font-weight: $type-body-weight;
     margin: 0;
+    overflow-x: hidden;
 }
 
 iframe {
@@ -26,6 +27,7 @@ h3,
 h4,
 h5,
 h6 {
+    color: $black;
     font-family: $type-heading-font;
     font-weight: $type-heading-weight;
 }
@@ -63,6 +65,10 @@ p {
 
 strong {
     font-weight: bold;
+}
+
+p {
+    line-height: 1.55;
 }
 
 sup {
@@ -107,4 +113,19 @@ img {
     max-width: 100%;
     height: auto;
     border: 0;
+}
+
+code {
+    background-color: lighten($negative, 53%);
+    border: 1px solid lighten($negative, 42%);
+    border-radius: $border-radius;
+    color: $negative;
+    display: inline-block;
+    font-family: "Source Sans Pro", "Courier New", monospace;
+    @include rem(font-size, 1.2rem);
+    line-height: 1;
+    margin-left: .3em;
+    margin-right: .3em;
+    @include rem(padding, .3rem .5rem);
+    vertical-align: middle;
 }

@@ -1,91 +1,44 @@
 /**
  * All Round padding
  */
-.u-padding-1 {
-    @include rem(padding, 1rem);
-}
-
-.u-padding-2 {
-    @include rem(padding, 2rem);
-}
-
-.u-padding-3 {
-    @include rem(padding, 3rem);
-}
-
-.u-padding-4 {
-    @include rem(padding, 4rem);
-}
-
-.u-padding-5 {
-    @include rem(padding, 5rem);
-}
+.u-p-1 { @include rem(padding, 1rem); }
+.u-p-2 { @include rem(padding, 2rem); }
+.u-p-3 { @include rem(padding, 3rem); }
+.u-p-4 { @include rem(padding, 4rem); }
+.u-p-5 { @include rem(padding, 5rem); }
 
 /**
 * Top padding
 */
-.u-padding-top-1 {
-    @include rem(padding-top, 1rem);
-}
-
-.u-padding-top-2 {
-    @include rem(padding-top, 2rem);
-}
-
-.u-padding-top-3 {
-    @include rem(padding-top, 3rem);
-}
-
-.u-padding-top-4 {
-    @include rem(padding-top, 4rem);
-}
-
-.u-padding-top-5 {
-    @include rem(padding-top, 5rem);
-}
+.u-pt-1 { @include rem(padding-top, 1rem); }
+.u-pt-2 { @include rem(padding-top, 2rem); }
+.u-pt-3 { @include rem(padding-top, 3rem); }
+.u-pt-4 { @include rem(padding-top, 4rem); }
+.u-pt-5 { @include rem(padding-top, 5rem); }
 
 /**
 * Right padding
 */
-.u-padding-bottom-1 {
-    @include rem(padding-bottom, 1rem);
-}
+.u-pr-1 { @include rem(padding-right, 1rem); }
+.u-pr-2 { @include rem(padding-right, 2rem); }
+.u-pr-3 { @include rem(padding-right, 3rem); }
+.u-pr-4 { @include rem(padding-right, 4rem); }
+.u-pr-5 { @include rem(padding-right, 5rem); }
 
-.u-padding-bottom-2 {
-    @include rem(padding-bottom, 2rem);
-}
-
-.u-padding-bottom-3 {
-    @include rem(padding-bottom, 3rem);
-}
-
-.u-padding-bottom-4 {
-    @include rem(padding-bottom, 4rem);
-}
-
-.u-padding-bottom-5 {
-    @include rem(padding-bottom, 5rem);
-}
+/**
+* Bottom padding
+*/
+.u-pb-1 { @include rem(padding-bottom, 1rem); }
+.u-pb-2 { @include rem(padding-bottom, 2rem); }
+.u-pb-3 { @include rem(padding-bottom, 3rem); }
+.u-pb-4 { @include rem(padding-bottom, 4rem); }
+.u-pb-5 { @include rem(padding-bottom, 5rem); }
 
 /**
 * Left padding
 */
-.u-padding-left-1 {
-    @include rem(padding-left, 1rem);
-}
-
-.u-padding-left-2 {
-    @include rem(padding-left, 2rem);
-}
-
-.u-padding-left-3 {
-    @include rem(padding-left, 3rem);
-}
-
-.u-padding-left-4 {
-    @include rem(padding-left, 4rem);
-}
-
-.u-padding-left-5 {
-    @include rem(padding-left, 5rem);
-}
+.u-pl-1 { @include rem(padding-left, 1rem); }
+.u-pl-2 { @include rem(padding-left, 2rem); }
+.u-pl-3 { @include rem(padding-left, 3rem); }
+.u-pl-4 { @include rem(padding-left, 4rem); }
+.u-pl-5 { @include rem(padding-left, 5rem); }

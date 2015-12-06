@@ -1,26 +1,155 @@
 @import "grid-mixins";
 
-.example {
-    @include grid-wrapper(stretch);
+/**
+ * Helpers
+ */
 
-    .card {
+/* Wrapper */
+.grid-wrapper {
+    @include grid-wrapper();
+
+    &.flex-stretch {
+        align-items: stretch;
+    }
+
+    /**
+     * Columns
+     *
+     * These are nested because without
+     * the grid wrapper they're not
+     * even worth using!
+     */
+    [class*="col-"] {
         @include column();
-        @include span-columns(6);
+    }
 
-        &:nth-child(2n) {
-            margin-right: 0;
+    .col-1 {
+        @include span-columns(12); // Full
+    }
+    .col-1-2 {
+        @include span-columns(6); // Half
+    }
+    .col-1-3 {
+        @include span-columns(4); // Third
+    }
+    .col-1-4 {
+        @include span-columns(3); // Quarter
+    }
+    .col-1-6 {
+        @include span-columns(2); // Sixth
+    }
+    .col-2-3 {
+        @include span-columns(8); // 2 Thirds
+    }
+    .col-3-4 {
+        @include span-columns(9); // 3 Quarters
+    }
+
+    /* Small */
+    @include bp('small') {
+
+        .col-1-s {
+            @include span-columns(12); // Full
+        }
+        .col-1-2-s {
+            @include span-columns(6); // Half
+        }
+        .col-1-3-s {
+            @include span-columns(4); // Third
+        }
+        .col-1-4-s {
+            @include span-columns(3); // Quarter
+        }
+        .col-1-6-s {
+            @include span-columns(2); // Sixth
+        }
+        .col-2-3-s {
+            @include span-columns(8); // 2 Thirds
+        }
+        .col-3-4-s {
+            @include span-columns(9); // 3 Quarters
         }
 
-        @include bp('large') {
-            @include span-columns(4);
+    }
 
-            &:nth-child(2n) {
-                margin-right: $grid-gutter;
-            }
+    /* Medium */
+    @include bp('medium') {
 
-            &:last-child {
-                margin-right: 0;
-            }
+        .col-1-m {
+            @include span-columns(12); // Full
         }
+        .col-1-2-m {
+            @include span-columns(6); // Half
+        }
+        .col-1-3-m {
+            @include span-columns(4); // Third
+        }
+        .col-1-4-m {
+            @include span-columns(3); // Quarter
+        }
+        .col-1-6-m {
+            @include span-columns(2); // Sixth
+        }
+        .col-2-3-m {
+            @include span-columns(8); // 2 Thirds
+        }
+        .col-3-4-m {
+            @include span-columns(9); // 3 Quarters
+        }
+
+    }
+
+    /* Large */
+    @include bp('large') {
+
+        .col-1-l {
+            @include span-columns(12); // Full
+        }
+        .col-1-2-l {
+            @include span-columns(6); // Half
+        }
+        .col-1-3-l {
+            @include span-columns(4); // Third
+        }
+        .col-1-4-l {
+            @include span-columns(3); // Quarter
+        }
+        .col-1-6-l {
+            @include span-columns(2); // Sixth
+        }
+        .col-2-3-l {
+            @include span-columns(8); // 2 Thirds
+        }
+        .col-3-4-l {
+            @include span-columns(9); // 3 Quarters
+        }
+
+    }
+
+    /* Large */
+    @include bp('extra large') {
+
+        .col-1-xl {
+            @include span-columns(12); // Full
+        }
+        .col-1-2-xl {
+            @include span-columns(6); // Half
+        }
+        .col-1-3-xl {
+            @include span-columns(4); // Third
+        }
+        .col-1-4-xl {
+            @include span-columns(3); // Quarter
+        }
+        .col-1-6-xl {
+            @include span-columns(2); // Sixth
+        }
+        .col-2-3-xl {
+            @include span-columns(8); // 2 Thirds
+        }
+        .col-3-4-xl {
+            @include span-columns(9); // 3 Quarters
+        }
+
     }
 }

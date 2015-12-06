@@ -21,9 +21,14 @@
 @import "base/wrapper";
 @import "base/headings";
 
+// Components
+@import "components/components";
+
 // Utilities
 @import "utilities/padding";
 @import "utilities/margin";
-
-// Components
-@import "components/components";
+@import "utilities/text";
+@import "utilities/background-color";
+@import "utilities/color";
+@import "utilities/border";
+@import "utilities/box-shadow";

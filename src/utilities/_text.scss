@@ -1,0 +1,17 @@
+/* Text Ellipsis */
+.u-ellipsis {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Text Weights */
+.u-thin { font-weight: 100; }
+.u-light { font-weight: 300; }
+.u-normal { font-weight: 400; }
+
+.u-bold,
+.u-strong { font-weight: 700; }
+
+.u-heavy { font-weight: 900; }

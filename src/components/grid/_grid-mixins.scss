@@ -1,5 +1,6 @@
-@mixin grid-wrapper($align-items: flex-start) {
-    overflow-x: hidden;
+@mixin grid-wrapper($align-items: flex-start, $gutter: $grid-gutter) {
+    margin-left: -$gutter / 2;
+    margin-right: -$gutter / 2;
 
     @if $grid-type == float {
         @include clearfix;
@@ -12,30 +13,44 @@
     }
 }
 
-@mixin column() {
+@mixin column($top-gutter: true, $gutter: $grid-gutter) {
     box-sizing: border-box;
-    margin-right: $grid-gutter;
+    display: block;
+    margin-left: $gutter / 2;
+    margin-right: $gutter / 2;
     position: relative;
 
-    &:last-child {
-        margin-right: 0;
+    @if $top-gutter {
+        margin-top: $gutter;
     }
 
     @if $grid-type == float {
         float: left;
     }
+
+    /* Testing */
+    //border: 1px dashed $grey;
+    //padding: 1rem;
+    //text-align: center;
 }
 
-@mixin span-columns($span, $setup: false) {
+@mixin span-columns($span, $gutter: $grid-gutter, $setup: false) {
 
     @if $setup {
         @include column();
     }
 
+    /*
     $num-gutters: $grid-columns - 1; // Gutters will always be 1 less then columns
     $grid-gutter-space: $num-gutters * $grid-gutter; // Finding total space taken up by gutters
     $remaining-space: 100 - $grid-gutter-space; // Subtracting the total gutter space from 100(%)
     $column-width: $remaining-space / $grid-columns; // Finding column width by dividing space left by number of columns
     $width: ($span) * $column-width + ($grid-gutter * ($span - 1) );
     width: $width;
+    */
+
+    $half-gutter: $gutter / 2;
+    $remaining-space: 100% / $grid-columns;
+    $width: $span * $remaining-space;
+    width: calc(#{$width} - #{$gutter});
 }
